@@ -23,16 +23,16 @@ const App = () => (
           <View style={styles.bell}>
           <Image source={require('/Users/mobiloitte/Move2Earn/src/images/bell.png')}  />
           </View>
-          <View>
+          <View style={{height:height*0.08,justifyContent:'center'}}>
           <Image source={require('/Users/mobiloitte/Move2Earn/src/images/person.png')} style={styles.person} /> 
           </View>
           </View>
           <View style={styles.park}>
-          <Image source={require('/Users/mobiloitte/Move2Earn/src/images/Park.png')} style={{width:349}}  /> 
+          <Image source={require('/Users/mobiloitte/Move2Earn/src/images/Park.png')} style={{width:352}}  /> 
           </View>
-          <View style={{flexDirection:'row',justifyContent:'flex-start'}}>
+          <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
           <View style={styles.Square}>
-          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.13,width:width*0.27,}}> 
+          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.12,width:width*0.25,}}> 
           <View style={{height:height*0.074,justifyContent:'center'}}  >
           <Image source={require('/Users/mobiloitte/Move2Earn/src/images/Running.png')}  style={styles.Running}  /> 
           </View>
@@ -42,7 +42,7 @@ const App = () => (
           </ImageBackground>
           </View>
           <View style={styles.Square}>
-          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.13,width:width*0.27,}}> 
+          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.12,width:width*0.25,}}> 
           <View style={{height:height*0.074,justifyContent:'center'}}  >
           <Image source={require('/Users/mobiloitte/Move2Earn/src/images/Cycling.png')}  style={styles.Running}  /> 
           </View>
@@ -51,8 +51,8 @@ const App = () => (
           </Text>
           </ImageBackground>
           </View>
-          <View style={styles.Square}>
-          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.13,width:width*0.27,}}> 
+          <View style={styles.Square1}>
+          <ImageBackground source={require('/Users/mobiloitte/Move2Earn/src/images/Square.png')} style={{height:height*0.12,width:width*0.25,}}> 
           <View style={{height:height*0.074,justifyContent:'center'}}  >
           <Image source={require('/Users/mobiloitte/Move2Earn/src/images/Walk.png')}  style={styles.Running}  /> 
           </View>
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   },
   upperPart:{
     flexDirection:'row',
-    height:height*0.08,
+    height:height*0.08,//backgroundColor:'green'
   },
   text1: {
     fontWeight: 'bold',
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
 person:{
 height:35,
 width:35,
-top:9
+alignSelf:'center',//backgroundColor:'red'
 },
 park:{
 alignSelf:'center',
@@ -129,8 +129,13 @@ height:height*0.22,
 Square:{
 //resizeMode:'contain',
 height:height*0.16,
-width:width*0.32,//backgroundColor:'red'
+width:width*0.34,//backgroundColor:'red'
 },
+Square1:{
+  //resizeMode:'contain',
+  height:height*0.16,
+  width:width*0.25,//backgroundColor:'red'
+  },
 
 Running:{
 alignSelf:'center',
